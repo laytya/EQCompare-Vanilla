@@ -457,7 +457,7 @@ function EQCompare:SetupOriginHook(unload)
 		ShoppingTooltip2.SetAuctionCompareItem = self.origin.ShoppingTooltip2.SetAuctionCompareItem
 		ShoppingTooltip2.SetMerchantCompareItem = self.origin.ShoppingTooltip2.SetMerchantCompareItem
 	else
-		if not aux-addon then
+		if not (_G.defined and _G.defined("aux")) then
 			ShoppingTooltip1.SetAuctionCompareItem = function(a1,a2,a3,a4,a5)
 				if EQCompare:CheckHoldKey() or not self.db.profile.merchantAuctionKey then
 					return EQCompare.origin.ShoppingTooltip1.SetAuctionCompareItem(a1,a2,a3,a4,a5)
