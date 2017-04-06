@@ -13,6 +13,8 @@ v1.5
 
 ## Use [Niagara](https://github.com/laytya/Niagara) for GUI settings
 
+![Imgur](http://i.imgur.com/dFYE0Nd.jpg)
+
 ## Install
 
 + Extract the archive
